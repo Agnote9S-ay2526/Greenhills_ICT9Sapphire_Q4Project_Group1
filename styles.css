@@ -43,34 +43,12 @@ body {
     margin-bottom: 30px;
 }
 
-.input-label-badge {
-    background-color: #000;
-    color: #fff;
-    font-size: 0.75rem;
-    padding: 2px 12px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-bottom: -10px;
-    position: relative;
-    z-index: 2;
-}
-
 .custom-input {
     background-color: #c4c4c4;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
     text-align: center;
-    color: #444;
-}
-
-.custom-input::placeholder {
-    color: #666;
-}
-
-.session-notice {
-    font-style: italic; 
-    margin-top: -4px;
 }
 
 .btn-login {
@@ -87,19 +65,6 @@ body {
     color: white;
 }
 
-.btn-cancel {
-    background: none;
-    border: none;
-    color: #333;
-    margin-left: 15px;
-}
-
-.forgot-link {
-    color: #888;
-    text-decoration: underline;
-    font-size: 0.9rem;
-}
-
 .sidebar {
     background-color: #1a202c;
     min-height: 100vh;
@@ -114,6 +79,7 @@ body {
 
 .sidebar .logo-container img {
     width: 65px;
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -129,10 +95,11 @@ body {
     display: block;
     padding: 12px 25px;
     font-size: 0.95rem;
-    transition: all 0.2s ease;
+    transition: 0.2s;
 }
 
-.sidebar-nav li a:hover, .sidebar-nav li.active a {
+.sidebar-nav li a:hover,
+.sidebar-nav li.active a {
     background-color: #2d3748;
     color: #fff;
     font-weight: 600;
@@ -146,8 +113,6 @@ body {
     display: inline-block;
     font-size: 1.25rem;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .page-subtitle {
@@ -160,7 +125,6 @@ body {
 .content-card {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
-    border: none;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     padding: 30px;
 }
@@ -170,44 +134,6 @@ body {
     border-radius: 15px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.task-subject {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 15px;
-}
-
-.task-details {
-    font-size: 0.9rem;
-    color: #333;
-}
-
-.task-deadline {
-    font-size: 0.8rem;
-    color: #718096;
-    margin-bottom: 20px;
-}
-
-.btn-task-action {
-    background-color: #00bdf2;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    width: 100%;
-    padding: 8px;
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-.btn-task-action:hover {
-    background-color: #00a5d4;
-    color: white;
 }
 
 .team-card {
@@ -215,117 +141,9 @@ body {
     border-radius: 20px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    border: none;
-    transition: transform 0.2s ease-in-out;
+    transition: 0.2s;
 }
 
 .team-card:hover {
     transform: translateY(-3px);
-}
-
-.team-avatar-box {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: #00bdf2;
-    overflow: hidden;
-    margin-right: 20px;
-    flex-shrink: 0;
-    border: 3px solid #fff;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-.team-avatar-box img {
-    width: 100%;
-    height: auto;
-}
-
-.team-card-info .card-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #1a202c;
-    margin-bottom: 4px;
-}
-
-.team-card-info .card-text {
-    font-size: 0.85rem;
-    margin-bottom: 10px;
-}
-
-.btn-change-password {
-    background-color: #00bdf2;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-weight: 600;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.btn-change-password:hover {
-    background-color: #00a5d4;
-    color: white;
-}
-
-.vn-indiv {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
-}
-
-.custom-progress {
-    height: 8px;
-    background-color: #718096;
-    border-radius: 4px;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.sidebar {
-    background-color: #1a202c;
-    min-height: 100vh;
-    color: #fff;
-    padding-top: 20px;
-    z-index: 10;
-}
-
-.sidebar .logo-container img {
-    max-width: 65px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px auto;
-}
-
-.sidebar-nav {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.sidebar-nav li a {
-    color: #cbd5e0;
-    text-decoration: none;
-    display: block;
-    padding: 12px 25px;
-    font-size: 0.95rem;
-}
-
-/* Notebook Cards Styling */
-.vn-indiv {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border: none;
-}
-
-.custom-progress {
-    height: 8px;
-    background-color: #718096;
-    border-radius: 4px;
-    width: 100%;
-    margin-top: 15px;
 }
