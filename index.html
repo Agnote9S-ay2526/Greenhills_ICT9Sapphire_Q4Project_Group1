@@ -11,24 +11,35 @@
     <link rel="stylesheet" href="style.css">
 </head>    
 
-<body>
-    
-    <div class="container mt-5">
-        <form>
-            <label for="user">Username:</label>
-            <input type="text" id="userN" name="user" class="form-control">
+<body class="login-body">
 
-            <label for="pass">Password:</label>
-            <input type="password" id="passW" name="pass" class="form-control">
-            <button type="button" class="btn btn-primary mt-3" onclick="LogIn()">Login</button>
-            <div id="result"></div>
+    <div class="login-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png" alt="Logo" class="portal-logo">
+        <h1 class="login-title">Login</h1>
+        
+        <form id="loginForm" action="dashboard.html" method="GET">
+            <div class="mb-4 text-center">
+                <span class="input-label-badge">Username</span>
+                <input type="text" class="form-control custom-input mt-1" placeholder="Enter here" required>
+            </div>
+
+            <div class="mb-4 text-center">
+                <span class="input-label-badge">Password</span>
+                <input type="password" class="form-control custom-input mt-1" placeholder="********" required>
+            </div>
+
+            <div class="mb-4">
+                <button type="submit" class="btn btn-login shadow-sm">Login</button>
+                <button type="button" class="btn btn-cancel">Cancel</button>
+            </div>
+            
         </form>
     </div>
-
-    <script src="main.js"></script>
 
      <div class="footer-strip">
         Zoe Bueno | 9-Sapphire ©2026
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
