@@ -1,24 +1,17 @@
 var u = "Student";
 var p = "Password";
 
-function LogIn() {
+function Login() {
 
-    let uinput = document.getElementById("userN").value.trim();
-    let pinput = document.getElementById("passW").value.trim();
+    let usernameInput = document.getElementById("username").value;
+    let passwordInput = document.getElementById("password").value;
 
-    if (uinput === u && pinput === p) {
-
-        document.getElementById("result").innerHTML =
-        "Welcome back, Student! :D";
-
-        setTimeout(() => {
-            window.location.href = "./dashboard.html";
-        }, 500);
+    if (usernameInput === "uinput" && passwordInput === "pinput") {
+        alert("Welcome, Student!");
     }
 
-    else {
-
-        document.getElementById("result").innerHTML =
-        "WRONG!";
+    else{
+        alert("Incorrect username or password.");
     }
+
 }
