@@ -13,7 +13,7 @@ function LogIn() {
         document.getElementById("result").innerHTML =
         "Welcome back, Student! :D";
 
-        window.location.href = "dashboard.html";
+        window.location.href = "./dashboard.html";
     }
 
     else {
