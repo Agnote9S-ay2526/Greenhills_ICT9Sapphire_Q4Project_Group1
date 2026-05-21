@@ -1,19 +1,19 @@
-var u, p;
-
-u = "Student";
-p = "Password";
+var u = "Student";
+var p = "Password";
 
 function LogIn() {
 
-    let uinput = document.getElementById("userN").value;
-    let pinput = document.getElementById("passW").value;
+    let uinput = document.getElementById("userN").value.trim();
+    let pinput = document.getElementById("passW").value.trim();
 
-    if (u === uinput && p === pinput) {
+    if (uinput === u && pinput === p) {
 
         document.getElementById("result").innerHTML =
         "Welcome back, Student! :D";
 
-        window.location.href = "./dashboard.html";
+        setTimeout(() => {
+            window.location.href = "./dashboard.html";
+        }, 500);
     }
 
     else {
