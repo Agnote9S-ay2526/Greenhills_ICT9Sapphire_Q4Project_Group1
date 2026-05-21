@@ -1,7 +1,7 @@
 var u = "Student";
 var p = "Password";
 
-function Login() {
+function login() {
 
     let usernameInput = document.getElementById("username").value;
     let passwordInput = document.getElementById("password").value;
